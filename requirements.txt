@@ -1,0 +1,22 @@
+# OCR引擎核心库
+paddlepaddle>=2.5.0  # CPU版本，GPU版本请使用 paddlepaddle-gpu
+paddleocr>=2.7.0
+pytesseract>=0.3.10
+easyocr>=1.7.0
+rapidocr-onnxruntime>=1.3.0
+
+# 图像处理
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# 配置和数据处理
+PyYAML>=6.0
+
+# 日志
+loguru>=0.7.0
+
+# 平台特定依赖
+# macOS Vision Framework (通过pyobjc)
+pyobjc-framework-Vision>=9.0; sys_platform == 'darwin'
+pyobjc-framework-Quartz>=9.0; sys_platform == 'darwin'
